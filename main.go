@@ -34,4 +34,7 @@ func main() {
 
 	fmt.Println(x, y)
 
+	test := "asdsadsa"
+	fmt.Println(test)
+
 }

@@ -12,6 +12,22 @@ func printbooks(books book) {
 	fmt.Printf("book name is %s", books.title)
 }
 
+type mp struct {
+	info map[string]string
+}
+
+func (m mp) judge(k string) bool {
+	if _, found := m.info[k]; found {
+		fmt.Println(found)
+		return true
+	} else {
+		//
+		
+		fmt.Println(found)
+		return false
+	}
+}
+
 func main() {
 
 	var book1 book = book{"bookname", "bookauthor", 10}
@@ -30,4 +46,10 @@ func main() {
 	printbooks(book1)
 
 	fmt.Println(*ptr)
+
+	mi := mp{}
+	ma := map[string]string{"haha": "hege"}
+	mi.info = ma
+	fmt.Println(mi.judge("hahe"))
+
 }

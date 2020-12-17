@@ -1,0 +1,1 @@
+r.FindAllStringSubmatch(str1, 1)
