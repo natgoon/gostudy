@@ -39,9 +39,13 @@ func main() {
 
 	test := "asdsadsa"
 	fmt.Println(test)
-	logrus.Test()
 
 	log := logrus.New()
 	log.Info("test")
+
+	aaa := "asdasdas"
+	aa := &aaa
+	aa = &aaa
+	fmt.Println(*aa)
 
 }

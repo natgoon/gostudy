@@ -37,7 +37,7 @@ func httpGet(url string) (string, error) {
 
 }
 
-func HttpGet(url string, headers map[string]string) (string, error) {
+func Get(url string, headers map[string]string) (string, error) {
 	client := &http.Client{}
 	requestGet, err := http.NewRequest("GET", url, nil)
 	if err != nil {
@@ -68,7 +68,7 @@ func HttpGet(url string, headers map[string]string) (string, error) {
 	return res, nil
 }
 
-func HttpPost(url string, data map[string]string, headers map[string]string) (string, error) {
+func Post(url string, data map[string]string, headers map[string]string) (string, error) {
 	client := &http.Client{}
 
 	jsonData, _ := json.Marshal(data)
