@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"test/logrus"
+)
 
 // 该因式分解的写法一般用于声明全局变量
 var (
@@ -36,5 +39,9 @@ func main() {
 
 	test := "asdsadsa"
 	fmt.Println(test)
+	logrus.Test()
+
+	log := logrus.New()
+	log.Info("test")
 
 }

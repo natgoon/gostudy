@@ -1,1 +1,1 @@
-r.FindAllStringSubmatch(str1, 1)
+	log.Fatal("tttttttttttttttttttt")
